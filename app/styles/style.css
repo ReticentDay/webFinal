@@ -1,6 +1,80 @@
-@media @import "_body"{
-  .button-box__button{
-    width: 50px;
-    height:20px;
-  }
+body{
+  margin: 0px;
+  background-color: rgb(222, 255, 179);
 }
+h1{
+  font: 34px/1 "Arial Black";
+}
+h2{
+  font: 20px/1 "Arial Black";
+}
+p{
+  font: 16px/1 "Arial Black";
+}
+.botton{
+  border-style: none;
+  background-color:rgb(126, 223, 0);
+  text-decoration:none;
+  text-align: center;
+  color: #ffffff;
+}
+.botton:hover{
+  background-color:rgb(146, 215, 55);
+}
+.botton:visited{
+  color: #ffffff;
+}
+.slid_box{
+  background-color: #ffffff;
+  border-radius:10px;
+  -webkit-box-shadow:3px 3px 3px 0px #222222;
+          box-shadow:3px 3px 3px 0px #222222;
+  padding: 20px 20px;
+  position: relative;
+}
+.top-box{
+  height: 50px;
+  background-color: #ffffff;
+}
+.top-box__logo{
+    height: 50px;
+    margin-left: 20px;
+  }
+.button-box{
+  width: 100%;
+  background-color: rgb(126, 223, 0);
+  height: 50px;
+}
+.button-box__button{
+    display: inline-block;
+    width: 150px;
+    height:50px;
+  }
+.main{
+  max-width: 1280px;
+  width: 95%;
+  margin: 10px auto;
+}
+.main__content{
+    float: left;
+    width: 70%;
+    height: 200px;
+    margin-right: 20px;
+  }
+.main__slid{
+    float: right;
+    width: 20%;
+    height: 200px;
+  }
+.main__slid__button{
+      display: inline-block;
+      height: 20px;
+      width: 30px;
+    }
+.main__slid__button p{
+        margin: 0px;
+      }
+.main__slid__slid-box{
+      height: 200px;
+      margin-bottom: 10px;
+    }

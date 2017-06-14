@@ -1,0 +1,43 @@
+$shallowGreen: rgb(222, 255, 179);
+$mainGreen: rgb(126, 223, 0);
+$hoverGreen : rgb(146, 215, 55);
+body{
+  margin: 0px;
+  background-color: $shallowGreen;
+}
+
+h1{
+  font: 34px/1 "Arial Black";
+}
+
+h2{
+  font: 20px/1 "Arial Black";
+}
+
+p{
+  font: 16px/1 "Arial Black";
+}
+
+.botton{
+  border-style: none;
+  background-color:$mainGreen;
+  text-decoration:none;
+  text-align: center;
+  color: #ffffff;
+}
+
+.botton:hover{
+  background-color:$hoverGreen;
+}
+
+.botton:visited{
+  color: #ffffff;
+}
+
+.slid_box{
+  background-color: #ffffff;
+  border-radius:10px;
+  box-shadow:3px 3px 3px 0px #222222;
+  padding: 20px 20px;
+  position: relative;
+}
