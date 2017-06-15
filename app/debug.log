@@ -19,3 +19,6 @@
 [0614/111453:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Setmy\Reports\Dump: 系統找不到指定的路徑。 (0x3)
 [0614/111453:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: 管道已結束。 (0x6D)
 [0614/111453:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Setmy\Reports\Dump: 系統找不到指定的路徑。 (0x3)
+[0615/200225:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Setmy\Reports\Dump: 系統找不到指定的路徑。 (0x3)
+[0615/200225:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: 管道已結束。 (0x6D)
+[0615/200225:ERROR:crash_report_database_win.cc(562)] CreateDirectory C:\Program Files (x86)\Setmy\Reports\Dump: 系統找不到指定的路徑。 (0x3)
