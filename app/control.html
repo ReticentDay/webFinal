@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/controlStyle.css">
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -22,19 +23,26 @@
   <div class="body">
     <div class="body__login">
       <form action="#">
-        <input type="text" class="body__login__input">
+        <label for="username">Username</label>
+        <input type="text" class="body__login__input" id="username">
+        <label for="password">Password</label>
+        <input type="text" class="body__login__input" id="password">
       </form>
+      <a class="body__login__button botton" href="#" id="sing_in_button" >Login</a>
     </div>
+    <div class="body__main">
+      <div class="body__main__list">
+        <a class="body__main__list__button botton" href="#" id="btw_news_list">News List</a>
+        <a class="body__main__list__button botton" href="#" id="btw_add_news">Add News</a>
+        <a class="body__main__list__button botton" href="#" id="btw_logout">Logout</a>
+      </div>
+      <div class="body__main__content">
 
-    <div class="body__list">
-
-    </div>
-    <div class="body__content">
-
+      </div>
     </div>
   </div>
 
-  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
   <script src="temp/scripts/App.js"></script>
 </body>
 </html>
