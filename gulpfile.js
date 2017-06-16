@@ -31,12 +31,18 @@ gulp.task('indexStyles',function(){
   .pipe(gulp.dest('./app/styles'));
 });
 
+gulp.task('controlStyles',function(){
+  return gulp.src('./app/css/controlStyle.css')
+  .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
+  .pipe(gulp.dest('./app/styles'));
+});
 
 gulp.task('watch',function(){
 
   watch('./app/css/*.css',function(){
     gulp.start('styles');
     gulp.start('indexStyles');
+    gulp.start('controlStyles');
   });
 
 });

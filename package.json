@@ -2,17 +2,22 @@
   "name": "wibFinal",
   "version": "1.0.0",
   "dependencies": {
+    "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
     "query": "^0.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.2",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.0",
     "gulp-watch": "^4.3.11",
     "postcss-import": "^10.0.0",
     "postcss-mixins": "^6.0.0",
     "postcss-nested": "^2.0.2",
-    "postcss-simple-vars": "^4.0.0"
+    "postcss-simple-vars": "^4.0.0",
+    "webpack": "^2.6.1"
   }
 }

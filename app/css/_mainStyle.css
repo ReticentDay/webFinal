@@ -3,6 +3,7 @@ $mainGreen: rgb(126, 223, 0);
 $hoverGreen : rgb(146, 215, 55);
 body{
   margin: 0px;
+  height: 100%;
   background-color: $shallowGreen;
 }
 
