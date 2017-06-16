@@ -14,6 +14,7 @@ $hoverGreen : rgb(146, 215, 55);
   background-color: $mainGreen;
   height: 50px;
   &__button{
+    text-align: center;
     display: inline-block;
     width: 150px;
     height:50px;

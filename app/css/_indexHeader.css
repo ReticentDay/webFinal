@@ -3,6 +3,7 @@ body{
 }
 
 h1{
+  margin: 0px;
   color: white;
 }
 
@@ -20,15 +21,21 @@ h2{
   &__button{
     display: inline-block;
     float: left;
-    width: 150px;
+    width: 20%;
     height: 50px;
     margin: 0px;
     background-color: black;
+    img{
+      max-width: 100px;
+    }
     h2{
       color: white;
     }
   }
   &__button:hover{
     background-color: gray;
+  }
+  &__img:hover{
+    background-color: black;
   }
 }
