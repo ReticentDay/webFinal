@@ -4,8 +4,15 @@ $hoverGreen : rgb(146, 215, 55);
   height: 50px;
   background-color: #ffffff;
   &__logo{
+    float: left;
+    display: inline-block;
     height: 50px;
     margin-left: 30px;
+  }
+  h1{
+    float: left;
+    display: inline-block;
+    margin: 5px;
   }
 }
 

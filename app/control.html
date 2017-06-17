@@ -11,7 +11,8 @@
 <body>
   <nav>
     <div class="top-box">
-      <img class = "top-box__logo" src="img/logo.png" alt="">
+      <a href="main.html"><img class = "top-box__logo" src="img/logo.png"></a>
+      <h1>後臺管理</h1>
     </div>
     <div class="button-box">
       <a class="button-box__button botton" href="news.html"><h2>NEWS</h2></a>
@@ -26,7 +27,7 @@
         <label for="username">Username</label>
         <input type="text" class="body__login__input" id="username">
         <label for="password">Password</label>
-        <input type="text" class="body__login__input" id="password">
+        <input type="password" class="body__login__input" id="password">
       </form>
       <a class="body__login__button botton" href="#" id="sing_in_button" >Login</a>
     </div>
@@ -37,7 +38,24 @@
         <a class="body__main__list__button botton" href="#" id="btw_logout">Logout</a>
       </div>
       <div class="body__main__content">
+        <div class="body__main__content__news-list">
 
+        </div>
+        <div class="body__main__content__add-news">
+          <h1>新增新新聞</h1>
+          <form action="#">
+            <label for="">輸入標題：</br></label>
+            <input type="text" class="body__main__content__add-news__input" id="title">
+            <label for=""></br>放入圖片：</br></label>
+            <input type="file" class="body__main__content__add-news__file-input" name="file" id="file" />
+            <label for=""></br>文本內容：</br></label>
+            <textarea class="body__main__content__add-news__text-content" id="text-content"></textarea>
+          </form>
+          <div class="body__main__content__add-news__btw">
+            <a class="body__main__content__add-news__btw__button botton" href="#" id="reset_button" >reset</a>
+            <a class="body__main__content__add-news__btw__button botton" href="#" id="submit_button" >Submit</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
