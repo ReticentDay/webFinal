@@ -38,8 +38,15 @@ p{
   background-color: #ffffff;
 }
 .top-box__logo{
+    float: left;
+    display: inline-block;
     height: 50px;
     margin-left: 30px;
+  }
+.top-box h1{
+    float: left;
+    display: inline-block;
+    margin: 5px;
   }
 .button-box{
   width: 100%;
@@ -52,14 +59,82 @@ p{
     width: 150px;
     height:50px;
   }
-.body__list{
-    display: inline-block;
-    width: 20%;
-    height: 600px;
-    background-color: rgb(146, 215, 55);
+.body__login{
+    width: auto;
+    margin:20px;
   }
-.body__content{
-    display: inline-block;
-    width: 80%;
+.body__login__input{
+      display: block;
+    }
+.body__login__button{
+      display: inline-block;
+      margin-top: 5px;
+      height: 23px;
+      width: 50px;
+    }
+.body__main{
     height: 600px;
   }
+.body__main__list{
+      display: inline-block;
+      float: left;
+      width: 20%;
+      height: 1000px;
+      background-color: rgb(146, 215, 55);
+    }
+.body__main__list__button{
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 5px auto;
+      }
+.body__main__content{
+      display: inline-block;
+      float: right;
+      width: 80%;
+      height: 1000px;
+    }
+.body__main__content__news-list__content{
+          width: 90%;
+          margin: 20px;
+          height: 140px;
+        }
+.body__main__content__news-list__content h1{
+            margin: 0px;
+          }
+.body__main__content__news-list__content__button{
+            display: inline-block;
+            float: right;
+            width: 50px;
+            padding: 10px;
+            background-color: rgb(255, 112, 112);
+          }
+.body__main__content__news-list__content__button:hover{
+            background-color: rgb(255, 48, 48);
+          }
+.body__main__content__add-news{
+        width: 95%;
+        margin: 2.5%;
+
+      }
+.body__main__content__add-news__input{
+          width: 60%;
+        }
+.body__main__content__add-news__text-content{
+          width: 100%;
+          height: 500px;
+        }
+.body__main__content__add-news__btw{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 250px;
+        }
+.body__main__content__add-news__btw__button{
+            display: inline-block;
+            margin: 10px 10px;
+            width: 100px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }

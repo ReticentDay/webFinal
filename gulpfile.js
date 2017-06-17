@@ -51,11 +51,10 @@ gulp.task('controlStyles',function(){
 });
 
 gulp.task('scripts',function(callback){
-  wabpack(require('./webpack.config.js') , function(err, stats){
+  webpack(require('./webpack.config.js') , function(err, stats){
     if(err){
       console.log(err.toString());
     }
-
     console.log(stats.toString());
     callback();
   });
@@ -71,7 +70,7 @@ gulp.task('watch',function(){
     gulp.start('relationcStyles');
 
   });
-  watch('.app/scripts/*.js',function(){
+  watch('./app/scripts/**/*.js',function(){
     gulp.start('scripts');
   });
 });

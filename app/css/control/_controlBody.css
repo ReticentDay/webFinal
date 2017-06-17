@@ -1,14 +1,83 @@
 $hoverGreen : rgb(146, 215, 55);
 .body{
-  &__list{
-    display: inline-block;
-    width: 20%;
-    height: 600px;
-    background-color: $hoverGreen;
+  &__login{
+    width: auto;
+    margin:20px;
+    &__input{
+      display: block;
+    }
+    &__button{
+      display: inline-block;
+      margin-top: 5px;
+      height: 23px;
+      width: 50px;
+    }
   }
-  &__content{
-    display: inline-block;
-    width: 80%;
+  &__main{
     height: 600px;
+    &__list{
+      display: inline-block;
+      float: left;
+      width: 20%;
+      height: 1000px;
+      background-color: $hoverGreen;
+      &__button{
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 5px auto;
+      }
+    }
+    &__content{
+      display: inline-block;
+      float: right;
+      width: 80%;
+      height: 1000px;
+      &__news-list{
+        &__content{
+          width: 90%;
+          margin: 20px;
+          height: 140px;
+          h1{
+            margin: 0px;
+          }
+          &__button{
+            display: inline-block;
+            float: right;
+            width: 50px;
+            padding: 10px;
+            background-color: rgb(255, 112, 112);
+          }&__button:hover{
+            background-color: rgb(255, 48, 48);
+          }
+        }
+      }
+      &__add-news{
+        width: 95%;
+        margin: 2.5%;
+        &__input{
+          width: 60%;
+        }
+        &__text-content{
+          width: 100%;
+          height: 500px;
+        }
+        &__btw{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 250px;
+          &__button{
+            display: inline-block;
+            margin: 10px 10px;
+            width: 100px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+        }
+
+      }
+    }
   }
 }

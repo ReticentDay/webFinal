@@ -38,8 +38,15 @@ p{
   background-color: #ffffff;
 }
 .top-box__logo{
+    float: left;
+    display: inline-block;
     height: 50px;
     margin-left: 30px;
+  }
+.top-box h1{
+    float: left;
+    display: inline-block;
+    margin: 5px;
   }
 .button-box{
   width: 100%;
