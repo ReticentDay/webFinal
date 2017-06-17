@@ -14,3 +14,11 @@ module.exports = {
     filename: 'nesApp.js'
   }
 }
+
+module.exports = {
+  entry: './app/scripts/newscApp.js',
+  output: {
+    path: path.join(__dirname,'./app/temp/scripts'),
+    filename: 'newscApp.js'
+  }
+}

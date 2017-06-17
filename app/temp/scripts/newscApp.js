@@ -10343,33 +10343,40 @@ $(document).ready(function(){
   firebase.initializeApp(config);
   var dbNewsRef = firebase.database().ref().child('newsList');
 
-  dbNewsRef.limitToLast(10).on('child_added',function(snapshot){
+  var Request = new Object();
+  Request = GetRequest();
+  function GetRequest() {
+       var url = location.search;
+       var theRequest = new Object();
+       if (url.indexOf("?") != -1) {
+          var str = url.substr(1);
+          strs = str.split("&");
+          for(var i = 0; i < strs.length; i++) {
+             theRequest[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]);
+          }
+       }
+       return theRequest;
+  }
+
+  var $idName = Request["id"];
+  dbNewsRef.child($idName).on('value',function(snapshot){
     var data = snapshot.val();
     var title = data.title;
-    var text = data.text.split("\n");
+    var textList = data.text.split("\n");
     var userPhoto = data.photoURL;
+    var text = "";
+    textList.forEach(function(key,value){
+      text += key + "<br />"
+    });
 
-    var $divElement = $("<div class='main_content slid_box'>");
-    var $h1Element = $("<h1></h1>")
-    var $hrElement = $("<hr>");
-    var $pImgElement = $("<p></p>");
-    var $formElement = $("<form action='newsc.html' method='get'></form>");
-    var $hideElement = $("<input type='hidden' name='id'>");
-    var $btwElement = $("<input class='main_content__button botton' type='submit' name='send' value='繼續閱讀'>");
-
-    $divElement.attr({"id": title});
-    $hideElement.attr({"value": title});
-    $h1Element.text(title);
-    $pImgElement.html(text[0] + "<br />" + text[1] + "<br />" + text[2] + "......");
-    $formElement.append($hideElement);
-    $formElement.append($btwElement);
-    $divElement.append($h1Element);
-    $divElement.append($hrElement);
-    $divElement.append($pImgElement);
-    $divElement.append($formElement);
-    $(".main").append($divElement);
+    $(".main__content__body__img").attr({"src": userPhoto});
+    var $titleElement = $("<h1></h1>");
+    var $pElement = $("<p></p>");
+    $titleElement.html(title);
+    $pElement.html(text);
+    $(".main__content__body").append($titleElement);
+    $(".main__content__body").append($pElement);
   });
-
 
 });
 
