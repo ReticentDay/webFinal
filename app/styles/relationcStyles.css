@@ -1,0 +1,123 @@
+body{
+  margin: 0px;
+  height: 100%;
+  background-color: rgb(222, 255, 179);
+}
+h1{
+  font: 34px/1 "Arial Black";
+}
+h2{
+  font: 20px/1 "Arial Black";
+}
+p{
+  font: 16px/1 "Arial Black";
+}
+.botton{
+  border-style: none;
+  background-color:rgb(126, 223, 0);
+  text-decoration:none;
+  text-align: center;
+  color: #ffffff;
+}
+.botton:hover{
+  background-color:rgb(146, 215, 55);
+}
+.botton:visited{
+  color: #ffffff;
+}
+.slid_box{
+  background-color: #ffffff;
+  border-radius:10px;
+  -webkit-box-shadow:3px 3px 3px 0px #222222;
+          box-shadow:3px 3px 3px 0px #222222;
+  padding: 20px 20px;
+  position: relative;
+}
+.top-box{
+  height: 50px;
+  background-color: #ffffff;
+}
+.top-box__logo{
+    height: 50px;
+    margin-left: 30px;
+  }
+.button-box{
+  width: 100%;
+  background-color: rgb(126, 223, 0);
+  height: 50px;
+}
+.button-box__button{
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    height:50px;
+  }
+.main{
+  max-width: 1280px;
+  width: 95%;
+  margin: 10px auto;
+}
+.main__content{
+    float: left;
+    width: 70%;
+    height: 700px;
+    margin-right: 20px;
+  }
+.main__content__body{
+      width: 100%;
+      height: 500px;
+    }
+.main__content__body img{
+        width: 100%;
+      }
+.main__content__more{
+      height: 50px;
+      width: 100%;
+      padding: 0px;
+      margin-top: 20px;
+      -webkit-box-shadow:2px 2px 3px 2px #222222;
+              box-shadow:2px 2px 3px 2px #222222;
+    }
+.main__slid{
+    float: right;
+    width: 20%;
+    height: 700px;
+  }
+.main__slid__slid-box{
+      height: 300px;
+      margin-bottom: 60px;
+    }
+.main__slid__slid-box__content{
+        height: 270px;
+      }
+.main__slid__slid-box__button{
+        display: inline-block;
+        height: 30px;
+        width: 50px;
+      }
+.main__slid__slid-box__button p{
+          margin: 5px;
+        }
+.label{
+  margin-bottom: 10px;
+}
+.label p{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+  }
+.text{
+  margin-bottom: 10px;
+}
+.text input{
+    display: inline-block;
+    width: 32%
+  }
+.pluse{
+  height: 30px;
+
+}
+.pluse input{
+    float: right;
+  }

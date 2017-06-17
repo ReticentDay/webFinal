@@ -32,6 +32,18 @@ gulp.task('indexStyles',function(){
   .pipe(gulp.dest('./app/styles'));
 });
 
+gulp.task('newsStyles',function(){
+  return gulp.src('./app/css/newsStyles.css')
+  .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
+  .pipe(gulp.dest('./app/styles'));
+});
+
+gulp.task('relationcStyles',function(){
+  return gulp.src('./app/css/relationcStyles.css')
+  .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
+  .pipe(gulp.dest('./app/styles'));
+});
+
 gulp.task('controlStyles',function(){
   return gulp.src('./app/css/controlStyle.css')
   .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
@@ -54,7 +66,10 @@ gulp.task('watch',function(){
   watch('./app/css/**/*.css',function(){
     gulp.start('styles');
     gulp.start('indexStyles');
+    gulp.start('newsStyles');
     gulp.start('controlStyles');
+    gulp.start('relationcStyles');
+
   });
   watch('.app/scripts/*.js',function(){
     gulp.start('scripts');
