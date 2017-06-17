@@ -34,6 +34,25 @@ $hoverGreen : rgb(146, 215, 55);
       float: right;
       width: 80%;
       height: 1000px;
+      &__news-list{
+        &__content{
+          width: 90%;
+          margin: 20px;
+          height: 140px;
+          h1{
+            margin: 0px;
+          }
+          &__button{
+            display: inline-block;
+            float: right;
+            width: 50px;
+            padding: 10px;
+            background-color: rgb(255, 112, 112);
+          }&__button:hover{
+            background-color: rgb(255, 48, 48);
+          }
+        }
+      }
       &__add-news{
         width: 95%;
         margin: 2.5%;

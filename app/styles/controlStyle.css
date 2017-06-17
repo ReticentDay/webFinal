@@ -95,6 +95,24 @@ p{
       width: 80%;
       height: 1000px;
     }
+.body__main__content__news-list__content{
+          width: 90%;
+          margin: 20px;
+          height: 140px;
+        }
+.body__main__content__news-list__content h1{
+            margin: 0px;
+          }
+.body__main__content__news-list__content__button{
+            display: inline-block;
+            float: right;
+            width: 50px;
+            padding: 10px;
+            background-color: rgb(255, 112, 112);
+          }
+.body__main__content__news-list__content__button:hover{
+            background-color: rgb(255, 48, 48);
+          }
 .body__main__content__add-news{
         width: 95%;
         margin: 2.5%;

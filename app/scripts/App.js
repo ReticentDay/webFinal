@@ -15,16 +15,43 @@ $(document).ready(function(){
   var photoURL;
   $(".body__login").show();
   $(".body__main").hide();
+  $(".body__main__content__add-news").hide();
   const $file = $('#file');
-
+  var list;
   firebase.auth().onAuthStateChanged(function(user){
     if(user){
       $(".body__login").hide();
       $(".body__main").show();
+
+      dbNewsRef.limitToLast(10).on('child_added',function(snapshot){
+        var data = snapshot.val();
+        var title = data.title;
+        var text = data.text.split("\n");
+        var userPhoto = data.photoURL;
+
+        var $divElement = $("<div class='body__main__content__news-list__content slid_box'>");
+        var $h1Element = $("<h1></h1>")
+        var $pImgElement = $("<p></p>");
+        var $btnElement = $("<button type='button' class='body__main__content__news-list__content__button botton btw-deleat' >刪除</button>");
+
+        $divElement.attr({"id": title});
+        $btnElement.attr({"id": title});
+        $h1Element.text(title);
+        $pImgElement.html(text[0] + "<br />" + text[1] + "<br />" + text[2] + "......");
+        $divElement.append($h1Element);
+        $divElement.append($pImgElement);
+        $divElement.append($btnElement);
+        $(".body__main__content__news-list").append($divElement);
+      });
     }else{
       $(".body__login").show();
       $(".body__main").hide();
     }
+  });
+
+  $(".body__main__content__news-list").on('click','.btw-deleat',function(e) {
+    dbNewsRef.child(e.target.id).set(null);
+    $("#" + e.target.id).remove();
   });
 
   var sing_in = function(e){
@@ -81,8 +108,8 @@ $(document).ready(function(){
   $('#submit_button').click(function(e){
     var title = $('#title').val();
     var content = $('#text-content').val();
-
-    dbNewsRef.push({title:title,text:content,photoURL:photoURL});
+    var photoU = photoURL || "null";
+    dbNewsRef.child(title).update({title:title,text:content,photoURL:photoU});
     $('#text-content').val('');
     $('#title').val('');
     $('#file').val('');
