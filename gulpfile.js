@@ -44,6 +44,12 @@ gulp.task('newscStyles',function(){
   .pipe(gulp.dest('./app/styles'));
 });
 
+gulp.task('helpStyles',function(){
+  return gulp.src('./app/css/helpStyles.css')
+  .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
+  .pipe(gulp.dest('./app/styles'));
+});
+
 gulp.task('relationcStyles',function(){
   return gulp.src('./app/css/relationcStyles.css')
   .pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
@@ -73,6 +79,7 @@ gulp.task('watch',function(){
     gulp.start('indexStyles');
     gulp.start('newsStyles');
     gulp.start('newscStyles');
+    gulp.start('helpStyles');
     gulp.start('controlStyles');
     gulp.start('relationcStyles');
 

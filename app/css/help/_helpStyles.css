@@ -1,0 +1,36 @@
+.main{
+  &__content{
+    margin-bottom:50px;
+    display: block;
+    width:95%;
+    height:auto;
+    &__label{
+      float: left;
+      margin-bottom: 0px;
+      margin-left: 50px;
+    }
+    &__text{
+      float: left;
+    }
+    &__mid{
+      p{
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+.text{
+  display: block;
+  margin-bottom: 0px;
+  padding-top: 16px;
+  height: 16px;
+  input{
+    width: 70%;
+  }
+}
+
+.submit{
+  display: inline-block;
+  float: right;
+}
