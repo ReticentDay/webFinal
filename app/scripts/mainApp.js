@@ -19,6 +19,13 @@ $(document).ready(function(){
       var text = data.text.split("\n");
       var userPhoto = data.photoURL;
 
+      var $formElement = $("<form action='newsc.html' method='get'></form>");
+      var $hideElement = $("<input type='hidden' name='id'>");
+      var $btwElement = $("<input class='main__content__button botton' type='submit' name='send' value='繼續閱讀'>");
+
+      $hideElement.attr({"value": title});
+      $formElement.append($hideElement);
+      $formElement.append($btwElement);
       $(".main__content__body__img").css("background-image",'url(' + userPhoto + ')');
       var $titleElement = $("<h1></h1>");
       var $pElement = $("<p></p>");
@@ -26,6 +33,7 @@ $(document).ready(function(){
       $pElement.html(text[0] + "<br />" + text[1] + "<br />" + text[2] + "......");
       $(".main__content__body").append($titleElement);
       $(".main__content__body").append($pElement);
+      $(".main__content__body").append($formElement);
     });
     for(var i = list.length - 2;i >= list.length - 4 && i >= 0;i--){
       dbNewsRef.child(list[i]).on('value',function(snapshot){
@@ -35,8 +43,12 @@ $(document).ready(function(){
         var userPhoto = data.photoURL;
 
         var divElement = $("<div class='main__content__more slid_box'></div>");
-        divElement.html("<p>" + title + "</p>");
-        $("main__content").append(divElement);
+
+        var $btwElement = $("<a class='main__content__more__click'></a>");
+        $btwElement.attr({"href":"newsc.html?id=" + title});
+        $btwElement.html("<h2>" + title + "</h2>");
+        divElement.append($btwElement);
+        $(".main__content").append(divElement);
       });
     }
   });

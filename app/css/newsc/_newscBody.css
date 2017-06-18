@@ -1,6 +1,9 @@
 .main__content{
   min-height: 1200px;
   &__body{
+    &__img{
+      height: 500px;
+    }
     p{
       word-break: break-all;
     }

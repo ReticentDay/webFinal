@@ -31,3 +31,11 @@ module.exports = {
     filename: 'mainApp.js'
   }
 }
+
+module.exports = {
+  entry: './app/scripts/relationcApp.js',
+  output: {
+    path: path.join(__dirname,'./app/temp/scripts'),
+    filename: 'relationcApp.js'
+  }
+}

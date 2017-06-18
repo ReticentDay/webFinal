@@ -10369,7 +10369,7 @@ $(document).ready(function(){
       text += key + "<br />"
     });
 
-    $(".main__content__body__img").attr({"src": userPhoto});
+    $(".main__content__body__img").css("background-image",'url(' + userPhoto + ')');
     var $titleElement = $("<h1></h1>");
     var $pElement = $("<p></p>");
     $titleElement.html(title);
