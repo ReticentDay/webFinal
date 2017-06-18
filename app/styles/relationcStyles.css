@@ -130,26 +130,35 @@ p{
 .main__slid__slid-box__button p{
           margin: 5px;
         }
-.label{
-  margin-bottom: 10px;
+.main__content{
+  width: 96%;
+  height: auto;
 }
-.label p{
-    width: 33%;
-    display: inline-block;
-    text-align: center;
-    margin: auto;
+.main__content__body{
+    height: auto;
   }
-.text{
-  margin-bottom: 10px;
-}
-.text input{
-    display: inline-block;
-    width: 32%
-  }
-.pluse{
-  height: 30px;
-
-}
-.pluse input{
-    float: right;
-  }
+.main__content__body__label{
+      margin-bottom: 10px;
+    }
+.main__content__body__label p{
+        width: 33%;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+      }
+.main__content__body__text{
+      margin-bottom: 10px;
+    }
+.main__content__body__text__input{
+        display: inline-block;
+        width: 32%
+      }
+.main__content__body__pluse{
+      height: 30px;
+    }
+.main__content__body__pluse input{
+        float: right;
+      }
+.main__content__body__count input{
+        float: right;
+      }

@@ -10,7 +10,7 @@
 <body>
   <nav>
     <div class="top-box">
-      <img class = "top-box__logo" src="./img/logo-white.png" alt="logo-white">
+      <a href="main.html"><img class = "top-box__logo" src="./img/logo-white.png" alt="logo-white"></a>
     </div>
     <div class="button-box">
       <a class="button-box__button botton" href="news.html"><h2>NEWS</h2></a>
@@ -18,28 +18,37 @@
       <a class="button-box__button botton" href="buylist.html"><h2>BUY</h2></a>
       <a class="button-box__button botton" href="help.html"><h2>HELP</h2></a>
     </div>
+    <div class="bread-crumbs">
+      <p><a href="main.html">首頁</a>><a href="relation.html">關於</a>>計算電量</p>
+    </div>
   </nav>
   <div class="main">
-    <div class="main_content slid_box">
-      <div class="main_content_body">
+    <div class="main__content slid_box">
+      <div class="main__content__body">
         <h1>電費計算</h1>
         <hr>
-        <div class="main_content label">
+        <div class="main__content__body__label">
           <p>電器</p>
-          <p>功率</p>
-          <p>使用時數</p>
+          <p>功率(kw/h)</p>
+          <p>使用時數(h)</p>
         </div>
-        <div class="main_content text">
-          <input type="text" name="app" value="">
-          <input type="text" name="kw" value="">
-          <input type="text" name="hour" value="">
+        <div class="main__content__body__text">
+          <input class="main__content__body__text__input app" type="text" name="app" value="">
+          <input class="main__content__body__text__input kw" type="text" name="kw" value="">
+          <input class="main__content__body__text__input hour" type="text" name="hour" value="">
         </div>
-        <div class="main_content pluse">
-          <input type="button" name="pulse" value="+">
+        <div class="main__content__body__pluse">
+          <input class="main__content__body__pluse__button" type="button" name="pulse" value="+">
         </div>
         <hr>
+        <div class="main__content__body__count">
+          <h2 class="main__content__body__count__asn"></h2>
+          <input class="main__content__body__count__button" type="button" name="pulse" value="計算">
+        </div>
+        <p>此計算電費為非夏月(10/1~5/31)價格計算</p>
       </div>
     </div>
   </div>
+  <script src="temp/scripts/relationcApp.js"></script>
 </body>
 </html>
