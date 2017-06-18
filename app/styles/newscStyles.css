@@ -119,28 +119,13 @@ p{
 .main__slid__slid-box__button p{
           margin: 5px;
         }
-h1{
-  font: 34px/1 "Arial Black";
-}
-h2{
-  font: 20px/1 "Arial Black";
-}
-p{
-  font: 16px/1 "Arial Black";
-}
 .main__content{
-    margin-bottom:50px;
-    display: block;
-    width:95%;
-    height:auto;
-  }
-.main__content__news{
-      float: right;
-      margin-bottom: 0px;
+  min-height: 1200px;
+
+}
+.main__content__body p{
+      word-break: break-all;
     }
-.main__content__news h2{
-        font: 20px/1 "Arial Black";
-        float: right;
-        font-weight: bold;
-        margin: 0px;
+.main__slid__slid-box__content p{
+        word-break: break-all;
       }

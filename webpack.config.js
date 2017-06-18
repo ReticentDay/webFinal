@@ -7,6 +7,7 @@ module.exports = {
     filename: 'App.js'
   }
 }
+
 module.exports = {
   entry: './app/scripts/nesApp.js',
   output: {
@@ -20,5 +21,13 @@ module.exports = {
   output: {
     path: path.join(__dirname,'./app/temp/scripts'),
     filename: 'newscApp.js'
+  }
+}
+
+module.exports = {
+  entry: './app/scripts/mainApp.js',
+  output: {
+    path: path.join(__dirname,'./app/temp/scripts'),
+    filename: 'mainApp.js'
   }
 }

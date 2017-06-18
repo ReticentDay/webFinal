@@ -1,4 +1,4 @@
 @import "_mainStyle";
 @import "main/_header";
 @import "main/_body";
-@import "_newsStyle";
+@import "news/_newsStyle";

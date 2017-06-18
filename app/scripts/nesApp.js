@@ -17,10 +17,11 @@ $(document).ready(function(){
     var text = data.text.split("\n");
     var userPhoto = data.photoURL;
 
-    var $divElement = $("<div class='main_content slid_box'>");
+    var $divElement = $("<div class='main__content slid_box'>");
     var $h1Element = $("<h1></h1>")
     var $hrElement = $("<hr>");
     var $pImgElement = $("<p></p>");
+    var $duvBtwElement = $("<div class='main__content__news'></div>");
     var $formElement = $("<form action='newsc.html' method='get'></form>");
     var $hideElement = $("<input type='hidden' name='id'>");
     var $btwElement = $("<input class='main_content__button botton' type='submit' name='send' value='繼續閱讀'>");
@@ -30,7 +31,8 @@ $(document).ready(function(){
     $h1Element.text(title);
     $pImgElement.html(text[0] + "<br />" + text[1] + "<br />" + text[2] + "......");
     $formElement.append($hideElement);
-    $formElement.append($btwElement);
+    $duvBtwElement.append($btwElement);
+    $formElement.append($duvBtwElement);
     $divElement.append($h1Element);
     $divElement.append($hrElement);
     $divElement.append($pImgElement);

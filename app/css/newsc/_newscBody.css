@@ -1,0 +1,18 @@
+.main__content{
+  min-height: 1200px;
+  &__body{
+    p{
+      word-break: break-all;
+    }
+  }
+
+}
+.main__slid{
+  &__slid-box{
+    &__content{
+      p{
+        word-break: break-all;
+      }
+    }
+  }
+}

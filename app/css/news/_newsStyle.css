@@ -1,0 +1,30 @@
+h1{
+  font: 34px/1 "Arial Black";
+}
+
+h2{
+  font: 20px/1 "Arial Black";
+}
+
+p{
+  font: 16px/1 "Arial Black";
+}
+
+.main{
+  &__content{
+    margin-bottom:50px;
+    display: block;
+    width:95%;
+    height:auto;
+    &__news{
+      float: right;
+      margin-bottom: 0px;
+      h2{
+        font: 20px/1 "Arial Black";
+        float: right;
+        font-weight: bold;
+        margin: 0px;
+      }
+    }
+  }
+}

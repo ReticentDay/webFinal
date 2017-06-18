@@ -45,5 +45,36 @@ $(document).ready(function(){
     $(".main__content__body").append($titleElement);
     $(".main__content__body").append($pElement);
   });
+  dbNewsRef.on('value',function(snapshot){
+    var list = Object.keys(snapshot.val());
+    for(var i = list.length - 1;i >= list.length - 3 && i >= 0;i--){
+      dbNewsRef.child(list[i]).on('value',function(snapshot){
+        var data = snapshot.val();
+        var title = data.title;
+        var text = data.text.split("\n");
+        var userPhoto = data.photoURL;
 
+        var $divElement = $("<div class='main__slid__slid-box  slid_box'>");
+        var $h1Element = $("<h1></h1>")
+        var $hrElement = $("<hr>");
+        var $pImgElement = $("<p></p>");
+        var $duvBtwElement = $("<div class='main__slid__slid-box__content'></div>");
+        var $formElement = $("<form action='newsc.html' method='get'></form>");
+        var $hideElement = $("<input type='hidden' name='id'>");
+        var $btwElement = $("<input class='main_content__button botton' type='submit' name='send' value='繼續閱讀'>");
+
+        $divElement.attr({"id": title});
+        $hideElement.attr({"value": title});
+        $h1Element.text(title);
+        $pImgElement.html(text[0] + "<br />" + text[1] + "<br />" + text[2] + "......");
+        $formElement.append($hideElement);
+        $formElement.append($btwElement);
+        $duvBtwElement.append($h1Element);
+        $duvBtwElement.append($pImgElement);
+        $divElement.append($duvBtwElement);
+        $divElement.append($formElement);
+        $(".main__slid").append($divElement);
+      });
+    }
+  });
 });
