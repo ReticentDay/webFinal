@@ -16,6 +16,9 @@ p{
     display: block;
     width:95%;
     height:auto;
+    p{
+      word-break: break-all;
+    }
     &__news{
       float: right;
       margin-bottom: 0px;

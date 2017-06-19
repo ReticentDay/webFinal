@@ -7,8 +7,16 @@
 
 .entrance{
   text-align: center;
+  img{
+    max-width: 512px;
+    width: 100%
+  }
 }
 
 .bulb{
   text-align: center;
+  img{
+    max-width: 512px;
+    width: 100%
+  }
 }

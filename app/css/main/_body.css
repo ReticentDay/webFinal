@@ -1,12 +1,18 @@
 .main{
   max-width: 1280px;
-  width: 95%;
+  width: 90%;
   margin: 10px auto;
   &__content{
     float: left;
     width: 70%;
     height: 700px;
-    margin-right: 20px;
+
+    @mixin mi-pad{
+      float: none;
+      display: inline-block;
+      margin: -10px;
+      width: 90%;
+    }
     &__button{
       padding: 10px;
       font: 16px/1 "Arial Black";
@@ -14,6 +20,9 @@
     &__body{
       width: 100%;
       height: 500px;
+      p{
+        word-break: break-all;
+      }
       &__img{
         display: inline-block;
         width: 100%;
@@ -42,11 +51,31 @@
     float: right;
     width: 20%;
     height: 700px;
+    @mixin mi-pad{
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+      margin-top: 20px;
+      margin-left: -10px;
+      width: 100%;
+      height: 400px;
+    }
     &__slid-box{
       height: 300px;
       margin-bottom: 60px;
+      @mixin mi-pad{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 90%;
+        height: 150px;
+      }
       &__content{
         height: 270px;
+        @mixin mi-pad{
+          height: 120px;
+        }
       }
       &__button{
         display: inline-block;

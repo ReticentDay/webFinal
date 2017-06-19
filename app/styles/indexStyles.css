@@ -32,6 +32,7 @@ p{
           box-shadow:3px 3px 3px 0px #222222;
   padding: 20px 20px;
   position: relative;
+  z-index:0;
 }
 body{
   background-color: rgb(0, 0, 0);
@@ -52,6 +53,11 @@ h2{
   width: 100%;
   height: 50px;
 }
+@media only screen and (max-width: 768px){
+.button-box a{
+      display: none
+  }
+  }
 .button-box__button{
     display: inline-block;
     float: left;
@@ -59,6 +65,7 @@ h2{
     height: 50px;
     margin: 0px;
     background-color: black;
+
   }
 .button-box__button img{
       max-width: 100px;
@@ -68,6 +75,16 @@ h2{
     }
 .button-box__button:hover{
     background-color: gray;
+  }
+.button-box__img img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+@media only screen and (max-width: 768px){
+.button-box__img{
+      width: 100%
+  }
   }
 .button-box__img:hover{
     background-color: black;
@@ -81,6 +98,14 @@ h2{
 .entrance{
   text-align: center;
 }
+.entrance img{
+    max-width: 512px;
+    width: 100%
+  }
 .bulb{
   text-align: center;
 }
+.bulb img{
+    max-width: 512px;
+    width: 100%
+  }

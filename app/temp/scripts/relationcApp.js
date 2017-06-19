@@ -10332,6 +10332,15 @@ return jQuery;
 
 var $ = __webpack_require__(0);
 $(document).ready(function(){
+  var $inputAppElement = $("<input class='main__content__body__text__input app' type='text' name='app' value=''>");
+  var $inputKwElement = $("<input class='main__content__body__text__input kw' type='text' name='kw' value=''>");
+  var $inputHourElement = $("<input class='main__content__body__text__input hour' type='text' name='hour' value=''>");
+  var $divElement = $("<div class='main__content__body__text'></div>");
+  $divElement.append($inputAppElement);
+  $divElement.append($inputKwElement);
+  $divElement.append($inputHourElement);
+  $(".main__content__body__pluse").before($divElement);
+
   $(".main__content__body__pluse__button").click(function(){
     var $inputAppElement = $("<input class='main__content__body__text__input app' type='text' name='app' value=''>");
     var $inputKwElement = $("<input class='main__content__body__text__input kw' type='text' name='kw' value=''>");
@@ -10353,6 +10362,9 @@ $(document).ready(function(){
         max = Kw;
       }
       count += Kw;
+
+      console.log("kw:" + Kw);
+      console.log("count:" + count);
     });
     var monwy = 0;
     if (count<=120) {
@@ -10369,9 +10381,9 @@ $(document).ready(function(){
       monwy = 3385 + (count-1000) * 5.28;
     }
 
-
-    $(".main__content__body__count__asn").html("你的電價為" + monwy + "<br />最貴的電器為" + maxName +
-    "，總共耗了" + max + "KW的電");
+    console.log(count);
+    $(".main__content__body__count__asn").html("你的電價為" + Math.round(monwy) + "<br />最貴的電器為" + maxName +
+    "，總共耗了" + Math.round(max) + "KW的電");
   });
 });
 
