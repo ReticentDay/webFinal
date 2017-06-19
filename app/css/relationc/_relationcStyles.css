@@ -6,7 +6,7 @@
     &__label{
       margin-bottom: 10px;
       p{
-        width: 33%;
+        width: 30%;
         display: inline-block;
         text-align: center;
         margin: auto;
@@ -16,7 +16,7 @@
       margin-bottom: 10px;
       &__input{
         display: inline-block;
-        width: 32%
+        width: 30%
       }
     }
     &__pluse{

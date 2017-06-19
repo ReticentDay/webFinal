@@ -129,4 +129,19 @@ $(document).ready(function(){
      firebase.auth().signOut();
      console.log("signOut");
   });
+
+  $('#btw_news_list_B').click(function(){
+    $(".body__main__content__add-news").hide();
+    $(".body__main__content__news-list").show();
+  });
+
+  $('#btw_add_news_B').click(function(){
+    $(".body__main__content__add-news").show();
+    $(".body__main__content__news-list").hide();
+  });
+
+  $('#btw_logout_B').click(function(){
+     firebase.auth().signOut();
+     console.log("signOut");
+  });
 });

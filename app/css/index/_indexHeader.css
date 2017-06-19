@@ -18,6 +18,12 @@ h2{
   background-color: black;
   width: 100%;
   height: 50px;
+  a{
+    @mixin mi-pad{
+      display: none;
+    }
+  }
+
   &__button{
     display: inline-block;
     float: left;
@@ -31,9 +37,20 @@ h2{
     h2{
       color: white;
     }
+
   }
   &__button:hover{
     background-color: gray;
+  }
+  &__img{
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @mixin mi-pad{
+      width: 100%;
+    }
   }
   &__img:hover{
     background-color: black;
