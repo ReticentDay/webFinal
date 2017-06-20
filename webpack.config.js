@@ -9,14 +9,6 @@ module.exports = {
 }
 
 module.exports = {
-  entry: './app/scripts/newscApp.js',
-  output: {
-    path: path.join(__dirname,'./app/temp/scripts'),
-    filename: 'newscApp.js'
-  }
-}
-
-module.exports = {
   entry: './app/scripts/mainApp.js',
   output: {
     path: path.join(__dirname,'./app/temp/scripts'),
@@ -45,5 +37,13 @@ module.exports = {
   output: {
     path: path.join(__dirname,'./app/temp/scripts'),
     filename: 'App.js'
+  }
+}
+
+module.exports = {
+  entry: './app/scripts/newscApp.js',
+  output: {
+    path: path.join(__dirname,'./app/temp/scripts'),
+    filename: 'newscApp.js'
   }
 }

@@ -1,6 +1,6 @@
 $shallowGreen: rgb(222, 255, 179);
 $mainGreen: rgb(126, 223, 0);
-$hoverGreen : rgb(146, 215, 55);
+$hoverGreen : rgb(89, 126, 40);
 
 @define-mixin sm-mobile{
   @media only screen and (max-width: 480px){

@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/newscStyles.css">
   <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-  <title>Document</title>
+  <title>熄燈-最新消息</title>
 </head>
 <body>
+
   <nav>
     <div class="top-box">
       <a href="main.html"><img class = "top-box__logo" src="./img/logo-white.png" alt="logo-white"></a>
@@ -35,13 +36,14 @@
       <p><a href="main.html">首頁</a>><a href="news.html">新聞列表</a>>消息內容</p>
     </div>
   </nav>
+
   <div class="main">
     <div class="main__content slid_box">
       <div class="main__content__body">
         <div class="main__content__body__img"></div>
-        <div class="fb-share-button" data-layout="button_count">
-        </div>
+
       </div>
+<div class="fb-share-button" data-href="https://reticentday.github.io/webFinal/app/newsc.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Freticentday.github.io%2FwebFinal%2Fapp%2Fnewsc.html&amp;src=sdkpreparse">Share</a></div>
     </div>
     <div class="main__slid">
 
@@ -49,23 +51,12 @@
   </div>
   <script src="temp/scripts/newscApp.js"></script>
   <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '273325776406746',
-        xfbml      : true,
-        version    : 'v2.4'
-      });
-    };
-
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script>
-
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=273325776406746";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
