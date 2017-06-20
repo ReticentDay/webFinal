@@ -38,7 +38,7 @@ $(document).ready(function(){
     });
     $(document).attr("title", "熄燈-最新消息(" + title + ")");
     $(".fb-share-button").attr( "data-href","https://reticentday.github.io/webFinal/app/newsc.html?id=" + title);
-    $(".fb-share-button:a").attr( "href","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Freticentday.github.io%2FwebFinal%2Fapp%2Fnewsc.html?id=" + title + "&amp;src=sdkpreparse");
+    $(".fb-share-button>a").attr( "href","https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Freticentday.github.io%2FwebFinal%2Fapp%2Fnewsc.html?id=" + title + "&amp;src=sdkpreparse");
     $(".main__content__body__img").css("background-image",'url(' + userPhoto + ')');
     var $titleElement = $("<h1></h1>");
     var $pElement = $("<p></p>");
