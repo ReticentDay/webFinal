@@ -58,3 +58,7 @@ p{
   background-size:225px 150px;
   background-repeat:no-repeat;
 }
+
+.un-Min-Hight{
+  min-height: inherit;
+}

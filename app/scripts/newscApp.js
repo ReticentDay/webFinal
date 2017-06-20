@@ -36,6 +36,7 @@ $(document).ready(function(){
     textList.forEach(function(key,value){
       text += key + "<br />"
     });
+    $(document).attr("title", "熄燈-最新消息(" + title + ")");
 
     $(".main__content__body__img").css("background-image",'url(' + userPhoto + ')');
     var $titleElement = $("<h1></h1>");
