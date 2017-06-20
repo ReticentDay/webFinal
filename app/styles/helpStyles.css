@@ -296,6 +296,9 @@ p{
 .main__content__mid p{
         margin-left: 50px;
       }
+.main__content img{
+      width: 100%
+    }
 .text{
   display: block;
   margin-bottom: 0px;

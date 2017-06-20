@@ -19,9 +19,7 @@ h2{
   width: 100%;
   height: 50px;
   a{
-    @mixin mi-pad{
-      display: none;
-    }
+
   }
 
   &__button{
@@ -37,7 +35,11 @@ h2{
     h2{
       color: white;
     }
-
+    &__a{
+      @mixin mi-pad{
+        display: none;
+      }
+    }
   }
   &__button:hover{
     background-color: gray;

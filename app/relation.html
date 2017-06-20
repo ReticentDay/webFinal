@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/newsStyles.css">
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
   <title>Document</title>
 </head>
 <body>
   <nav>
     <div class="top-box">
-      <img class = "top-box__logo" src="./img/logo-white.png" alt="logo-white">
+      <a href="main.html"><img class = "top-box__logo" src="./img/logo-white.png" alt="logo-white"></a>
     </div>
     <div class="button-box">
       <a class="button-box__button botton" href="news.html"><h2>NEWS</h2></a>
@@ -18,28 +19,73 @@
       <a class="button-box__button botton" href="buylist.html"><h2>BUY</h2></a>
       <a class="button-box__button botton" href="help.html"><h2>HELP</h2></a>
     </div>
-    <div class="main">
-      <div class="main__content slid_box">
-        <h1>更多相關</h1>
-        <hr>
-        <p>內文</p>
-      </div>
-      <div class="main__content slid_box">
-        <h1>更多相關</h1>
-        <hr>
-        <p>內文</p>
-      </div>
-      <div class="main__content slid_box">
-        <h1>更多相關</h1>
-        <hr>
-        <p>內文</p>
-      </div>
-      <div class="main__content slid_box">
-        <h1>電費計算</h1>
-        <hr>
-        <a class="main__slid__slid-box__button botton" href="relationc.html"><p>Press me!</p></a>
+    <div class="button-box-buger button-box">
+      <input class="button-box-buger__check" id = "button-box-buger__check" type="checkbox">
+      <label for="button-box-buger__check" class="button-box-buger__label"></label>
+      <div class="button-box-buger__box">
+        <div class="button-box-buger__box__list">
+          <a class="button-box-buger__box__list__button botton" href="news.html"><h2>NEWS</h2></a>
+          <a class="button-box-buger__box__list__button botton" href="relation.html"><h2>ABOUT</h2></a>
+          <a class="button-box-buger__box__list__button botton" href="buylist.html"><h2>BUY</h2></a>
+          <a class="button-box-buger__box__list__button botton" href="help.html"><h2>HELP</h2></a>
+        </div>
       </div>
     </div>
+    <div class="bread-crumbs">
+      <p><a href="main.html">首頁</a>>相關列表</p>
+    </div>
   </nav>
+  <div class="main">
+    <div class="main__content slid_box code">
+      <h1><a>▼</a>　省電有什麼幫助呢?</h1>
+      <div class="cs">
+        <hr>
+        <p>1.	當然是省我們的電費啦。</p>
+        <p>2.	能夠節能減碳，對我們住的地球多些貢獻</p>
+        <p>3.	可以淨化空氣，減少二氧化碳的排放</p>
+        <p>4.	減少環境汙染</p>
+      </div>
+    </div>
+    <div class="main__content slid_box code">
+      <h1><a>▼</a>　有什麼省電小撇步呢?</h1>
+      <div class="cs">
+        <hr>
+        <p>1.	冷氣溫度設定範圍以26-28℃</p>
+        <p>2.	每二週清洗空氣過濾網一次，空氣過濾網太髒時，容易造成電力浪費。</p>
+        <p>3.	採用省電燈型燈管(泡)，較傳統白熾燈省電約60%以上。</p>
+        <p>4.	裝設熱感應開關在會議室、會客室、廁所….等場所，有人時自動開燈，沒人時自動關燈，既方便又可減少照明用電。</p>
+        <p>5.	抽水泵選用高效率或變頻式馬達。</p>
+        <p>6.	變壓器放置場所應有良好之通風，必要時加裝風扇或空調散熱。</p>
+        <p>7.	選用符合能源效率分級標示級數較低(如第一、二級)之冷氣機、電冰箱、除濕機、省電燈泡及電熱水瓶等家電產品，以及符合節能標章之其他電器產品，可節省用電。</p>
+      </div>
+    </div>
+    <div class="main__content slid_box code">
+      <h1><a>▼</a>　我有些省電撇步想提供該怎麼做呢?</h1>
+      <div class="cs">
+        <hr>
+        <p>點擊上方HELP按鈕就能填寫資料給我們了~</p>
+      </div>
+    </div>
+    <div class="clac">
+      <a class="countLi" href="relationc.html"></a>
+    </div>
+  </div>
+  <script>
+  $(function() {
+   $(".cs").hide();
+   $(".code > h1").click(function() {
+    $(this)
+        .parent()
+        .find(".cs")
+        .slideToggle();
+        if ($(this).children("a").text() == "▲") {
+          $(this).children("a").text("▼");
+        }else{
+          $(this).children("a").text("▲");
+        }
+
+   });
+  });
+  </script>
 </body>
 </html>

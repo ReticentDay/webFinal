@@ -31,3 +31,30 @@ p{
     }
   }
 }
+
+.code:hover {
+  cursor: pointer;
+}
+
+.cs{
+  p{
+    font: 16px/1 "Arial Black";
+  }
+}
+.countLi{
+  background: url("../img/clac.png");
+  display: block;
+  float: right;
+  height: 150px;
+  width: 225px;
+  background-position:center;
+  background-size:225px 150px;
+  background-repeat:no-repeat;
+}
+
+.countLi:hover{
+  background: url("../img/clac-hover.png");
+  background-position:center;
+  background-size:225px 150px;
+  background-repeat:no-repeat;
+}
